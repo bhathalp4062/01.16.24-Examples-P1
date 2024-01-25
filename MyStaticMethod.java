@@ -14,4 +14,16 @@ public class MyStaticMethod{
         }
         return 0;
     }
+    public static Boolean isVowel(String str){
+        str = str.toLowerCase();
+        if(str.length() > 1){
+            return false;
+        }
+        else if(str.equals("a") | str.equals("e")|str.equals("i")|str.equals("o")|str.equals("u")){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
